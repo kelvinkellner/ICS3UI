@@ -1,0 +1,63 @@
+import java.io.*;
+
+public class Problem2
+{
+  public static void main(String[] args) throws IOException
+  {
+    FileReader file = new FileReader("DATA12.txt");
+    BufferedReader read = new BufferedReader(file);
+    
+    String line = read.readLine();
+    int r = Integer.parseInt(line);
+    
+    int min[] = new int[r];
+    
+    for (int i = 0; i < r; i++)
+    {
+      line = read.readLine();
+      String array1[] = line.split(" ");
+      int size = Integer.parseInt(array[1]);
+      int diameter[] = new int[size];
+      
+      for(int i=0;i<size;i++)
+      {
+        diameter[i] = Integer.parseInt(array1[i+2]);
+      }
+      
+      for(int i=diameter.length;i>=2;i--)
+      {
+        for(int s=0;s+1<i;s++)
+        {
+          if(diameter[s]>diameter[s+1])
+          {
+            diameter = swap(s,s+1,diameter);
+          }
+        }
+      }
+      
+      min[i] = diameter[0];
+      
+    }
+    
+    int smallest = min[0];
+    
+    for(int k=0;k<r;k++)
+    {
+      if(smallest>min[k])
+      {
+        smallest = min[k];
+      }
+    }
+    
+    
+  }  //end main
+  
+  public int[] swap(int j, int k, int[] array)
+  {
+    int temp = array[j];
+    array[j] = array[k];
+    array[k] = temp;
+    
+    return array;
+  }
+}  //end class 

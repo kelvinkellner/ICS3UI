@@ -1,0 +1,18 @@
+import java.io.*;
+
+public class Problem3
+{
+  public static void main(String[] args) throws IOException
+  {
+    FileReader file = new FileReader("DATA22.txt");
+    BufferedReader read = new BufferedReader(file);
+    
+    String line = read.readLine();
+    String array[] = line.split(" ");
+    
+    int n = Integer.parseInt(array[0]);
+    int x = Integer.parseInt(array[1]); // even increasing
+    int y = Integer.parseInt(array[2]); // odd subtract
+    int z = Integer.parseInt(array[3]); // zero sets
+  }
+}

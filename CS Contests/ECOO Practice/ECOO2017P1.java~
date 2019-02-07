@@ -1,0 +1,29 @@
+public class ECCO2017P1
+{
+  public static void main(String[] args)
+  {
+    FileReader filein = new FileReader;
+    BufferedReader read = new BufferedReader(filein);
+    
+    do
+    {
+      String [] tempS = new String[3];
+      int [] tempI = new Int[tempS.length()];
+      boolean stillValid = true;
+      
+      for (int i = 0; i < tempS.length, i++)
+      {
+        tempS[i] = read.readLine();
+        if (tempS[i] = null)
+          stillValid = false;
+        else
+          tempI[i] = Integer.parseInt(tempS[i]);
+      }
+      
+      if (stillValid = true)
+      {
+        
+      }
+    }
+  }
+}

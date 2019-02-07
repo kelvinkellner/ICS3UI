@@ -1,0 +1,20 @@
+import java.util.*;
+
+public class CCCQuestion2
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in);
+    int n = scan.nextInt();
+    scan.nextLine();
+    String in = scan.nextLine();
+    
+    String [] numS = in.split(" ");
+    int [] nums = new int[n];
+    
+    for (i = 0; i < n; i++)
+      nums[i] = Integer.parseInt(numS[i]);
+    
+    nums.sort();
+  } 
+}

@@ -1,0 +1,115 @@
+import java.util.*;
+
+public class Unit1Part3Scanners
+{
+  public static void main(String[] args)
+  {
+    // Question 1
+    System.out.println("Unit 1 Part 3 - Scanner Practice\n--- Question 1 ---"); // divider
+    Scanner myInput = new Scanner(System.in); // initialize Scanner
+    int sum = 0; // give the myInputner a base to add to
+    System.out.println("Please input 3 integers to calculate the sum");
+    sum += myInput.nextInt();
+    sum += myInput.nextInt();
+    sum += myInput.nextInt();
+    myInput.nextLine();
+    System.out.println("The sum is: " + sum);
+    
+    // Question 2
+    System.out.println("\n--- Question 2 ---"); // divider
+    double avg = 0; // reset myInputner
+    System.out.println("Please type any 3 numbers to find the average");
+    avg += myInput.nextDouble();
+    avg += myInput.nextDouble();
+    avg += myInput.nextDouble();
+    myInput.nextLine();
+    System.out.println("The average is: " + (avg / 3));
+    
+    // Question 3
+    System.out.println("\n--- Question 3 ---"); // divider
+    avg = 0;
+    System.out.println("Please submit your 4 marks from the last semester.\nThis program will calculate the average");
+    avg += myInput.nextDouble();
+    avg += myInput.nextDouble();
+    avg += myInput.nextDouble();
+    avg += myInput.nextDouble();
+    myInput.nextLine();
+    System.out.println("Your last semester average was: " + (avg / 4) + "%");
+    
+    // Question 4
+    System.out.println("\n--- Question 4 ---"); // divider
+    System.out.println("Please enter two integers, and we will perform simple math operations on them (NOTE: Integers ONLY)");
+    int num1 = myInput.nextInt();
+    int num2 = myInput.nextInt();
+    myInput.nextLine();
+    System.out.println(num1 + "+" + num2 + "=" + (num1 + num2));
+    System.out.println(num1 + "-" + num2 + "=" + (num1 - num2));
+    System.out.println(num1 + "*" + num2 + "=" + (num1 * num2));
+    System.out.println(num1 + "/" + num2 + "=" + (num1 / num2));
+    System.out.println(num1 + "/" + num2 + "=" + (num1 / num2));
+    System.out.println(num1 + "^" + num2 + "=" + (int) Math.pow(num1, num2));
+    
+    // Question 5
+    System.out.println("\n--- Question 5 ---"); // divider
+    
+    int min = 1; // the lowest nmber that will be randomly generated for math operations
+    int max = 20;  // the lowest number that will be randomly generated for math operations
+    
+    Random random = new Random();
+    num1 = random.nextInt(max - min + 1) + min;
+    num2 = random.nextInt(max - min + 1) + min;
+    
+    System.out.println("What is " + num1 + " + " + num2 + "?");
+    myInput.nextLine();
+    System.out.println("What is " + num1 + " - " + num2 + "?");
+    myInput.nextLine();
+    System.out.println("What is " + num1 + " * " + num2 + "?");
+    myInput.nextLine();
+    System.out.println("What is " + num1 + "^2 + " + num2 + "?");
+    myInput.nextLine();
+    System.out.println("What is " + num1 + " + " + num2 + "^2?");
+    myInput.nextLine();
+    // Output the correct answer
+    System.out.println("\nThe correct answers were:");
+    System.out.println(num1 + " + " + num2 + " = " + (num1 + num2));
+    System.out.println(num1 + " - " + num2 + " = " + (num1 - num2));
+    System.out.println(num1 + " * " + num2 + " = " + (num1 * num2));
+    System.out.println(num1 + "^2 + " + num2 + " = " + ((num1 * num1) + num2));
+    System.out.println(num1 + " + " + num2 + "^2 = " + (num1 + (num2 * num2)));
+    
+    // Question 6
+    System.out.println("\n--- Question 6 ---"); // divider
+    System.out.println("What is your name?");
+    String name = myInput.nextLine();
+    System.out.println("What will be your age by the end of this year? (Integers only)");
+    int age = myInput.nextInt();
+    System.out.println("What is the current year? (in the format 20--)");
+    int year = myInput.nextInt();
+    myInput.nextLine();
+    System.out.println("Welcome " + name + " .\nYou were born in " + (year - age) + ".");
+    System.out.println("You were/will be 25 in " + (year - age + 25) + ", 50 in " + (year - age + 50) + ", and 75 in " + (year - age + 75) + ".");
+    
+    // Question 7
+    System.out.println("\n--- Question 7 ---"); // divider
+    System.out.println("Yo yo yo, let's calculate that circumference + area!\nPlease enter the radius of a circle (leave the units out dog, just sayin')");
+    double radius = myInput.nextDouble();
+    myInput.nextLine();
+    double circumference = 2 * Math.PI * radius;
+    double area = Math.PI * radius * radius;
+    System.out.println("Your circle has...\nA radius of: " + radius + "\nA circumference of: " + circumference + "\nAn area of: " + area);
+    
+    // Question 8
+    System.out.println("\n--- Question 8 ---"); // divider
+    System.out.println("Please enter the length, then enter the width of a rectangle (no units please)");
+    double length = myInput.nextDouble();
+    double width = myInput.nextDouble();
+    myInput.nextLine();
+    area = length * width;
+    double perimeter = (2 * length) + (2 * width);
+    System.out.println("Your rectangle has a length of " + length + ", a width of " + width + ", an area of " + area + ", and a perimeter of " + perimeter + ".");
+    
+    //myInput.close();
+    
+    
+  } // end main
+} // end class

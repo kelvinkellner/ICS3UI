@@ -1,0 +1,40 @@
+public class UnitOneOutputAssignment
+{
+  
+ public static void main(String[] args)
+ {
+   
+   //Question 1
+   System.out.println("Question 1"); //state question, so it's easier for Ms. Cooper to decern while marking :)
+   System.out.println("If I could I would feel nothing, that's the truth and I don't care"); //printing a line one of my favourite songs
+   System.out.println(""); //add a space between questions, unnecessary, but easier to digest :)
+   
+   //Question 2
+   System.out.println("Question 2");
+   System.out.println("If\nI\ncould\nI\nwould\nfeel\nnothing,\nthat's\nthe\ntruth\nand\nI\ndon't\ncare"); //print the same phrase, but with each word on a new line
+   System.out.println("");
+   
+   //Question 3
+   System.out.println("Question 3");
+   
+   //Part A - Parallelogram
+   System.out.println("- Part A -"); //another type of divider :)
+   System.out.println("PARALLELOG\nA\tR\nR\tA\nALLELOGRAM");
+   System.out.println("");
+   
+   //Part B - Trapezoid
+   
+   //Part C - Rectangle
+   System.out.println("- Part B -");
+   System.out.println("RECTANGLE\nE\tL\nC\tG\nT\tN\nA\tA\nN\tT\nG\tC\nL\tE\nELGNATCER");
+   System.out.println("");
+   
+   //Part D - Diamond
+   
+   System.out.println("   D\n  III\n AAAAA\nMMMMMMM\n AAAAA\n  III\n   D");
+   
+   //Question 4
+   
+ } //end Main
+ 
+} //end class

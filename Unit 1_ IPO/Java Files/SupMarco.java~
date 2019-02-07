@@ -1,0 +1,16 @@
+public class SupMarco
+{  
+  public static void main(String[] args)
+  {
+    //Setup scanner to read inputs
+    Scanner scanner = new Scanner(System.in);
+
+    //Output greeting
+    System.out.println("Is Marco trash?");
+    
+    //Collect user response
+    String input = scanner.nextLine();
+    
+    System.out.println(input);
+  }//end main
+}//end class

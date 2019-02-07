@@ -1,0 +1,31 @@
+
+
+public class DecisionsSelfLearning
+{
+  public static void main(String[] args)
+  {
+    
+    int grade = 0;
+    
+    while (grade < 100)
+    {
+    if (grade > 90)
+      System.out.println("Holy shit my guy, you're killing it! Your grade was a: " + grade);
+    else if (grade > 50) 
+      System.out.println("Ayyy, you passed! Your grade was a: " + grade);
+    else
+      System.out.println("Oooooh, sorry man, you failed :( Your grade was a: " + grade);
+    grade++;
+    }//end while
+    System.out.println("You're a perfect student now :)");
+    
+    for (int i=2; i<55; i++){
+      System.out.println("Count = " + i);
+    }
+    
+    int exponent = 0;
+    do {
+      System.out.println("2 to the power of " + exponent + " is " + Math.pow(2,exponent));
+    } while (exponent <= 25);
+  }//end main
+}//end class

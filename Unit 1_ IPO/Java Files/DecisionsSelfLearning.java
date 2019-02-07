@@ -1,0 +1,76 @@
+import java.util.Scanner;
+
+public class DecisionsSelfLearning
+{
+  public static void main(String[] args)
+  {
+    int grade = 0;
+    Scanner in = new Scanner(System.in);
+    boolean validGrade = false;
+    
+    System.out.println("What was your English grade from last semester?");
+    
+    do {
+      if (!in.hasNextInt()) {
+        System.out.println("That's not an integer! Try again please :)");
+        in.next();
+      } else if (in.nextInt() > 100) {
+        System.out.println("That grade is pretty high... you're not lying are you? What your real grade?");
+        in.next();
+      } else {
+        grade = in.nextInt();
+          if (grade > 90)
+            System.out.println("Holy shit my guy, you killed it!");
+          else if (grade >= 50) 
+            System.out.println("Ayyy, you passed!");
+          else
+            System.out.println("Oooooh, sorry man, you failed :(");
+        in.close();
+        validGrade = true;
+      }
+    } while (validGrade = false);
+    
+    while (grade < 100) {
+    if (grade > 90)
+      System.out.println("Holy shit my guy, you killed it!");
+    else if (grade > 50) 
+      System.out.println("Ayyy, you passed!");
+    else
+      System.out.println("Oooooh, sorry man, you failed :(");
+    grade += 100;
+    }//end while
+    in.close();
+    
+    for (int i=2; i<55; i++){
+      System.out.println("Count = " + i);
+    }
+    
+    int exponent = 0;
+    int answer;
+    do {
+      answer = (int) Math.pow(2,exponent);
+      System.out.println("2 to the power of " + exponent + " is " + answer);
+      exponent++;
+    } while (exponent <= 30);
+    
+    
+    int month = 4;
+    String monthText;
+    switch (month) {
+      case 1: monthText = "January"; break;
+      case 2: monthText = "February"; break;
+      case 3: monthText = "March"; break;
+      case 4: monthText = "April"; break;
+      case 5: monthText = "May"; break;
+      case 6: monthText = "June"; break;
+      case 7: monthText = "July"; break;
+      case 8: monthText = "August"; break;
+      case 9: monthText = "September"; break;
+      case 10: monthText = "October"; break;
+      case 11: monthText = "November"; break;
+      case 12: monthText = "December"; break;
+      default: monthText = "Invalid month"; break;
+    }
+    System.out.println(monthText);
+  }//end main
+}//end class

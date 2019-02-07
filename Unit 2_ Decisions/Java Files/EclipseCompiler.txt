@@ -1,0 +1,71 @@
+3 Mar 2018 18:32:34 GMT: Log 'EclipseCompiler.txt' opened: 3 Mar 2018 18:32:34 GMT with name C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\Unit 2_ Decisions\Java Files\EclipseCompiler.txt
+4 Mar 2018 1:21:41 GMT: diagnostics = javax.tools.DiagnosticCollector@12acfed
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@3a7b19
+fileObjects = [C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\Unit 2_ Decisions\Java Files\PickUpSticks.java]
+4 Mar 2018 1:21:41 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@480c70' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\Unit 2_ Decisions\Java Files;C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\drjava-beta-20160913-225446.exe]
+4 Mar 2018 1:21:42 GMT: Compiler call returned
+4 Mar 2018 1:21:42 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@62dcfc
+4 Mar 2018 1:21:42 GMT:  Kind = ERROR
+4 Mar 2018 1:21:42 GMT: Name = C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\Unit 2_ Decisions\Java Files\PickUpSticks.java LineNo = 85 ColNo = 9 Msg = 'Syntax error on token "catch", finally expected'
+4 Mar 2018 1:21:42 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1957cd7
+4 Mar 2018 1:21:42 GMT:  Kind = ERROR
+4 Mar 2018 1:21:42 GMT: Name = C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\Unit 2_ Decisions\Java Files\PickUpSticks.java LineNo = 158 ColNo = 17 Msg = 'Syntax error, insert "}" to complete Block'
+4 Mar 2018 1:21:42 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@19cc825
+4 Mar 2018 1:21:42 GMT:  Kind = ERROR
+4 Mar 2018 1:21:42 GMT: Name = C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\Unit 2_ Decisions\Java Files\PickUpSticks.java LineNo = 158 ColNo = 17 Msg = 'Syntax error, insert "while ( Expression ) ;" to complete DoStatement'
+4 Mar 2018 1:21:53 GMT: diagnostics = javax.tools.DiagnosticCollector@93ccb
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@13f3aaa
+fileObjects = [C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\Unit 2_ Decisions\Java Files\PickUpSticks.java]
+4 Mar 2018 1:21:53 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@1f5988c' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\Unit 2_ Decisions\Java Files;C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\drjava-beta-20160913-225446.exe]
+4 Mar 2018 1:21:53 GMT: Compiler call returned
+4 Mar 2018 1:21:53 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@32ae46
+4 Mar 2018 1:21:53 GMT:  Kind = ERROR
+4 Mar 2018 1:21:53 GMT: Name = C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\Unit 2_ Decisions\Java Files\PickUpSticks.java LineNo = 158 ColNo = 17 Msg = 'Syntax error, insert "}" to complete Block'
+4 Mar 2018 1:21:53 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@160ff46
+4 Mar 2018 1:21:53 GMT:  Kind = ERROR
+4 Mar 2018 1:21:53 GMT: Name = C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\Unit 2_ Decisions\Java Files\PickUpSticks.java LineNo = 158 ColNo = 17 Msg = 'Syntax error, insert "while ( Expression ) ;" to complete DoStatement'
+4 Mar 2018 1:24:27 GMT: diagnostics = javax.tools.DiagnosticCollector@d6ebcb
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@29c0ce
+fileObjects = [C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\Unit 2_ Decisions\Java Files\PickUpSticks.java]
+4 Mar 2018 1:24:27 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@119e7bb' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\Unit 2_ Decisions\Java Files;C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\drjava-beta-20160913-225446.exe]
+4 Mar 2018 1:24:27 GMT: Compiler call returned
+4 Mar 2018 1:24:34 GMT: diagnostics = javax.tools.DiagnosticCollector@1fbcfdb
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@a2d909
+fileObjects = [C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\Unit 2_ Decisions\Java Files\PickUpSticks.java]
+4 Mar 2018 1:24:34 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@268b98' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\Unit 2_ Decisions\Java Files;C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\drjava-beta-20160913-225446.exe]
+4 Mar 2018 1:24:34 GMT: Compiler call returned
+4 Mar 2018 1:32:13 GMT: diagnostics = javax.tools.DiagnosticCollector@4ef6be
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@19cdae9
+fileObjects = [C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\Unit 2_ Decisions\Java Files\PickUpSticks.java]
+4 Mar 2018 1:32:13 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@1bbbca2' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\Unit 2_ Decisions\Java Files;C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\drjava-beta-20160913-225446.exe]
+4 Mar 2018 1:32:13 GMT: Compiler call returned
+4 Mar 2018 1:33:01 GMT: diagnostics = javax.tools.DiagnosticCollector@cd0491
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@15bf80a
+fileObjects = [C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\Unit 2_ Decisions\Java Files\PickUpSticks.java]
+4 Mar 2018 1:33:01 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@15707e3' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\Unit 2_ Decisions\Java Files;C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\drjava-beta-20160913-225446.exe]
+4 Mar 2018 1:33:01 GMT: Compiler call returned
+4 Mar 2018 1:34:10 GMT: diagnostics = javax.tools.DiagnosticCollector@748985
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@1f0ed9c
+fileObjects = [C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\Unit 2_ Decisions\Java Files\PickUpSticks.java]
+4 Mar 2018 1:34:10 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@cea58' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\Unit 2_ Decisions\Java Files;C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\drjava-beta-20160913-225446.exe]
+4 Mar 2018 1:34:10 GMT: Compiler call returned
+4 Mar 2018 1:40:42 GMT: diagnostics = javax.tools.DiagnosticCollector@f7a40f
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@f5ca69
+fileObjects = [C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\Unit 2_ Decisions\Java Files\PickUpSticks.java]
+4 Mar 2018 1:40:42 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@21f785' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\Unit 2_ Decisions\Java Files;C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\drjava-beta-20160913-225446.exe]
+4 Mar 2018 1:40:42 GMT: Compiler call returned
+4 Mar 2018 1:41:42 GMT: diagnostics = javax.tools.DiagnosticCollector@163cf79
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@d83ab9
+fileObjects = [C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\Unit 2_ Decisions\Java Files\PickUpSticks.java]
+4 Mar 2018 1:41:42 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@1594cf2' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\Unit 2_ Decisions\Java Files;C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\drjava-beta-20160913-225446.exe]
+4 Mar 2018 1:41:42 GMT: Compiler call returned
+4 Mar 2018 1:42:59 GMT: diagnostics = javax.tools.DiagnosticCollector@1ea59f0
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@1d71c45
+fileObjects = [C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\Unit 2_ Decisions\Java Files\PickUpSticks.java]
+4 Mar 2018 1:42:59 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@124b964' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\Unit 2_ Decisions\Java Files;C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\drjava-beta-20160913-225446.exe]
+4 Mar 2018 1:42:59 GMT: Compiler call returned
+4 Mar 2018 2:15:29 GMT: diagnostics = javax.tools.DiagnosticCollector@cbdbd4
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@2a8cc5
+fileObjects = [C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\Unit 2_ Decisions\Java Files\PickUpSticks.java]
+4 Mar 2018 2:15:29 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@1c9eae4' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\Unit 2_ Decisions\Java Files;C:\Users\kelvi\Google Drive\Classroom\Grade 11\Semester 2\ICS3U_3C\drjava-beta-20160913-225446.exe]
+4 Mar 2018 2:15:29 GMT: Compiler call returned

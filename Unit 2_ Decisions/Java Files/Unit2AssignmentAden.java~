@@ -1,0 +1,153 @@
+import java.util.*;
+
+public class Unit2Assignment
+{
+  public static void main (String [] args)
+  {
+    Scanner startInput = new Scanner (System.in);
+    Scanner orderInput = new Scanner (System.in);
+    Scanner sticksInput = new Scanner (System.in);
+    
+    System.out.println ("We are about to play Nim\n");
+    System.out.println ("Instructions:\n- There are 13 sticks in total\n- You can either pick up 1, 2, or 3 sticks on your turn\n- Once your turn is completed I will also have the chance to pick up 1, 2, or 3 sticks\n- The person who picks up the last stick loses\n\nGood luck!");
+    System.out.println ("\nWould you like to begin the game (y/n)");
+    
+    String start = startInput.nextLine();
+    int sticks = 13;
+    
+    if(start.equalsIgnoreCase ("yes") || start.equalsIgnoreCase ("y"))
+    { 
+      System.out.println ("Would you like to go First or Second"); 
+      
+      while (!orderInput.hasNextLine());
+      {
+        orderInput.next();
+        System.out.println ("Sorry, that is an invalid statement. Please try again.");
+        String order = orderInput.nextLine();
+      }
+      
+      String order = orderInput.nextLine();
+      
+      while (order != "first")
+      {
+        System.out.println ("Sorry, that is an invalid statement. Please try again.");
+        order = orderInput.nextLine();
+      }
+       
+       if(order.equalsIgnoreCase ("first"))
+       {
+         System.out.println ("Please make your first choice, choose the number of sticks you would like to take:");
+         int choice1 = orderInput.nextInt();
+         int comchoice1 = 0;  
+         
+         while (!sticksInput.hasNextInt());
+         {
+           sticksInput.next();
+           System.out.println ("Sorry, that is an invalid statement. Please try again.");
+           choice1 = sticksInput.nextInt();
+         }       
+         while (choice1 > 3 || choice1 < 1)
+         { 
+           System.out.println ("Sorry, that is an invalid number. Please try again.");
+           choice1 = sticksInput.nextInt();      
+         }
+         
+         if (choice1 == 1)
+         {
+           comchoice1 = 3;
+           System.out.println ("You have chosen to take 1 sticks, there are now " + (sticks - choice1) + " sticks left");
+           System.out.println ("I have chosen to take 3 sticks, now there are " + (sticks - choice1 - comchoice1) + " sticks left\n");
+         }  
+         else if (choice1 == 2)
+         { 
+           comchoice1 = 2;
+           System.out.println ("You have chosen to take 2 sticks, there are now " + (sticks - choice1) + " sticks left");
+           System.out.println ("I have chosen to take 2 sticks, now there are " + (sticks - choice1 - comchoice1) + " sticks left\n");
+         }  
+         else if (choice1 == 3)
+         {  
+           comchoice1 = 1;
+           System.out.println ("You have chosen to take 3 sticks, there are now " + (sticks - choice1) + " sticks left");
+           System.out.println ("I have chosen to take 1 sticks, now there are " + (sticks - choice1 - comchoice1) + " sticks left\n");
+         } 
+                         
+         System.out.println ("It's your turn again, please choose the number of sticks you would like to take:");
+         int choice2 = sticksInput.nextInt();
+         int comchoice2 = 0;
+         
+         while (!sticksInput.hasNextInt());
+         {
+           sticksInput.next();
+           System.out.println ("Sorry, that is an invalid statement. Please try again.");
+           choice2 = sticksInput.nextInt();
+         }                 
+         while (choice2 > 3 || choice2 < 1)
+         {
+           System.out.println ("Sorry, that is an invalid number. Please try again.");
+           choice2 = sticksInput.nextInt();      
+         }
+         
+         if (choice2 == 1)
+         {
+           comchoice2 = 3;
+           System.out.println ("You have chosen to take 1 sticks, there are now " + (sticks - choice1 - comchoice1 - choice2) + " sticks left");
+           System.out.println ("I have chosen to take 3 sticks, now there are " + (sticks - choice1 - comchoice1 - choice2 - comchoice2) + " sticks left\n");
+         } 
+         else if (choice2 == 2)
+         {  
+           comchoice2 = 2;
+           System.out.println ("You have chosen to take 2 sticks, there are now " + (sticks - choice1 - comchoice1 - choice2) + " sticks left");
+           System.out.println ("I have chosen to take 2 sticks, now there are " + (sticks - choice1 - comchoice1 - choice2 - comchoice2) + " sticks left\n");
+         }  
+         else if (choice2 == 3)
+         {  
+           comchoice2 = 1;
+           System.out.println ("You have chosen to take 3 sticks, there are now " + (sticks - choice1 - comchoice1 - choice2) + " sticks left");
+           System.out.println ("I have chosen to take 1 sticks, now there are " + (sticks - choice1 - comchoice1 - choice2 - comchoice2) + " sticks left\n");
+         } 
+        
+         System.out.println ("It's your turn again, please choose the number of sticks you would like to take:");
+         int choice3 = sticksInput.nextInt();
+         int comchoice3 = 0;
+         while (!sticksInput.hasNextInt());
+         {
+           sticksInput.next();
+           System.out.println ("Sorry, that is an invalid statement. Please try again.");
+           choice3 = sticksInput.nextInt();
+         }         
+         while (choice3 > 3 || choice3 < 1)
+         {
+           System.out.println ("Sorry, that is an invalid number. Please try again.");
+           choice3 = sticksInput.nextInt();       
+         }
+         
+         if (choice3 == 1)
+         {
+           comchoice3 = 3;
+           System.out.println ("You have chosen to take 1 sticks, there are now " + (sticks - choice1 - comchoice1 - choice2 - comchoice2 - choice3) + " sticks left");
+           System.out.println ("I have chosen to take 3 sticks, now there is " + (sticks - choice1 - comchoice1 - choice2 - comchoice2 - choice3 - comchoice3) + " sticks left\n");
+         } 
+         else if (choice3 == 2)
+         { 
+           comchoice3 = 2;
+           System.out.println ("You have chosen to take 2 sticks, there are now " + (sticks - choice1 - comchoice1 - choice2 - comchoice2 - choice3) + " sticks left");
+           System.out.println ("I have chosen to take 2 sticks, now there is " + (sticks - choice1 - comchoice1 - choice2 - comchoice2 - choice3 - comchoice3) + " sticks left\n");
+         } 
+         else if (choice3 == 3)
+         {  
+           comchoice3 = 1;
+           System.out.println ("You have chosen to take 3 sticks, there are now " + (sticks - choice1 - comchoice1 - choice2 - comchoice2 - choice3) + " sticks left");
+           System.out.println ("I have chosen to take 1 sticks, now there is " + (sticks - choice1 - comchoice1 - choice2 - comchoice2 - choice3 - comchoice3) + " sticks left\n");
+         }
+       }
+    }
+    
+       else if (start.equalsIgnoreCase ("no") || start.equalsIgnoreCase ("n")) 
+       {
+         System.out.println ("Okay, maybe another time then");    
+       }
+   
+  }// end main
+}// end class
+
+

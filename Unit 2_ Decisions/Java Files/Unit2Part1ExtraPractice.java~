@@ -1,0 +1,40 @@
+import java.util.*;
+
+public class Unit2Part1ExtraPractice
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in);
+    int userInt;
+    
+    // Introduction
+    System.out.println("Unit 2 Part 1 - Extra Practice");
+    
+    // Question 1
+    System.out.println("\n--- Question 1 ---");
+    
+    System.out.println("What is 32 * 5?");
+    userInt = scan.nextInt();
+    if (userInt == (32*5))
+      System.out.println("Nice! That's correct :)");
+    else
+      System.out.println("Sorry! That's wrong :(\nThe correct answer was " + (32*5));
+    
+    System.out.println("What is 1240 / 20?");
+    userInt = scan.nextInt();
+    if (userInt == (1240/20))
+      System.out.println("Nice! That's correct :)");
+    else
+      System.out.println("Sorry! That's wrong :(\nThe correct answer was " + (1240/20));
+    
+    System.out.println("What is 4^3 + 20?");
+    userInt = scan.nextInt();
+    if (userInt == ((4*4*4)+20))
+      System.out.println("Nice! That's correct :)");
+    else
+      System.out.println("Sorry! That's wrong :(\nThe correct answer was " + ((4*4*4)+20));
+    
+    
+    scan.close();
+  } // end main
+} // end class

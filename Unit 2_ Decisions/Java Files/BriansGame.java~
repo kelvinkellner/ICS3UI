@@ -1,0 +1,122 @@
+//Brian Nguyen
+//Nim Game
+//March 1st, 2018
+//Mrs. Cooper
+import java.util.*;
+public class BriansGame
+{
+  public static void main(String[] args)
+  {
+    Scanner myInput= new Scanner(System.in);
+    //Explaining rules of the game
+    System.out.print("Nim\n");
+    System.out.print("There are 13 sticks, you can choose to pick up 3 2 or 1 stick(s). The objective of the game is to not be left with the last stick");
+    System.out.println("\nYou have the first turn since the computer is so generous. Please insert a number, which will be the amount you will pick up.");
+    
+    int stick=13;//Creating variable for sticks
+    boolean replay;//Declaring variable for replay
+    //All possibilities for the first round
+    do{
+    // Okayyyy, so right now what will happen is when you loop the game, it will just show a blank textbox. That's because if you notice, you take the value for the first turn inside the loop (the next line beneath this comment), but you don't actually ask the user for a new number inside the loop, that comes before it. So the last System.out line before the loop, where you ask the user for a number, that should be moves here inside the loop, so when the game restarts, it still asks for a new number too.
+    int firstMove=myInput.nextInt();
+    if (firstMove==3)
+    {
+      int stick1a = stick - 3;
+      System.out.println("You took 3 sticks and there are " + stick1a + " sticks left."); //Showing the move that the player made
+      System.out.println("The computer proceeds to take 1, leaving nine sticks left"); //Showing the move that the computer made
+    }
+    else if (firstMove==2)
+    {
+      int stick1b = stick - 2;
+      System.out.println("You took 2 sticks and there are " + stick1b + " sticks left."); 
+      System.out.println("The computer proceeds to take 2, leaving nine sticks left"); 
+    }
+    else if (firstMove==1)
+    {
+    int stick1c = stick - 1;
+      System.out.println("You took 1 stick and there are " + stick1c + " sticks left."); 
+      System.out.println("The computer proceeds to take 3, leaving nine sticks left"); 
+    }
+    else
+    {
+      System.out.println("You didn't listen to the rules, please rereun the program");
+    }
+    int stick2= 9;
+    System.out.println("\nThere are " + stick2 + " sticks left, please insert how many sticks you are going to pick up now \n(You still only have the choice of picking up 3 or 2 or 1 stick(s))");
+    
+//All possibilities for the second round
+    int secondMove=myInput.nextInt();
+    if (secondMove==3)
+    {
+      int stick2a = stick2 - 3;
+      System.out.println("You took 3 sticks and there are " + stick2a + " sticks left."); 
+      System.out.println("The computer proceeds to take 1, leaving five sticks left"); 
+    }
+    else if (secondMove==2)
+    {
+      int stick2b = stick2 - 2;
+      System.out.println("You took 2 sticks and there are " + stick2b + " sticks left."); 
+      System.out.println("The computer proceeds to take 2, leaving five sticks left"); 
+    }
+    else if (secondMove==1)
+    {
+      int stick2c = stick2 - 1;
+      System.out.println("You took 1 stick and there are " + stick2c + " sticks left."); 
+      System.out.println("The computer proceeds to take 3, leaving five sticks left"); 
+    }
+    else
+    {
+      System.out.println("You didn't listen to the rules, please rereun the program");
+    }
+    int stick3= 5;
+    System.out.println("\nThere are " + stick3 + " sticks left, please insert how many sticks you are going to pick up now \n(You still only have the choice of picking up 3 or 2 or 1 stick(s))");
+    
+    //All possibilities for the third round
+    int thirdMove=myInput.nextInt();
+    int stick4=1;
+    if (thirdMove==3)
+    {
+      int stick3a=stick3 - 3;
+      System.out.println("You took 3 sticks and there are " + stick3a + " sticks left."); 
+      System.out.print("The computer proceeds to take 1, leaving " + stick4 + " stick left\n");
+      System.out.println("You are left with the last stick and therefore lost. Try again next time!");
+    }
+    else if (thirdMove==2)
+    {
+      int stick3b=stick3 - 2;
+      System.out.println("You took 2 sticks and there are " + stick3b + " sticks left."); 
+      System.out.println("The computer proceeds to take 2, leaving " + stick4 + " stick left\n");
+      System.out.println("You are left with the last stick and therefore lost. Try again next time!");
+    }
+    else if (thirdMove==1)
+    {
+      int stick3c=stick3 - 1;
+      System.out.println("You took 1 stick and there are " + stick3c + " sticks left."); 
+      System.out.println("The computer proceeds to take 3, leaving " + stick4 + " stick left\n");
+      System.out.println("You are left with the last stick and therefore lost. Try again next time!");
+    }
+    else
+    {
+      System.out.println("You didn't listen to the rules, please rereun the program");
+    }
+    myInput.nextLine(); // I added this here, because without this, the program is grabbing the <enter> key pressed from the last .nextInt() used as the value of ab. Any time you use .nextInt() or .nextDouble(), just do "myInput.nextLine();" before using another .nextLine()
+    System.out.println("\nIf you want to try again, type yes. If not then type no and the program will close.");
+    String ab = myInput.nextLine();
+    if (ab.equals("yes"))
+    {
+      replay = true;
+    }
+    else
+    {
+      replay = false;
+    }
+    
+    }
+    while(replay == true);
+     
+  }//end main
+  }//end class
+    
+    
+
+

@@ -1,0 +1,10 @@
+public class Pokemon
+{
+  public static void main(String[] args)
+  {
+    String pokemon;
+    int level;
+    int health;
+    int[] moves;
+  }
+}

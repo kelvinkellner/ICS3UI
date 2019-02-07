@@ -1,0 +1,27 @@
+public class Player
+{
+  Pokemon[] pokemon;
+  
+  Player()
+  {
+    this.pokemon = new Pokemon[0];
+  }
+  
+  Pokemon newPokemon(Defaults defaults, String name)
+  {
+    int match = -1;
+    for(int i = 0; i < defaults.names.length; i++)
+    {
+      if (name.equalsIgnoreCase(defaults.names[i]))
+        match = i;
+    }
+    
+    Pokemon[] list = new Pokemon[this.pokemon.length+1];
+    for(int i = 0; i < this.pokemon.length)
+      list[i] = this.pokemon[i];
+    
+    Random random = new Random();
+    int level = random.nextInt(10)+10;
+    list[this.pokemon.length] = new Pokemon(defaults.names[match], level, (29+(level/10)), defaults.type[match], defaults.getMoves(defaults.names[match]));
+  }
+}

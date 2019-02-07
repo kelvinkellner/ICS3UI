@@ -1,0 +1,30 @@
+import java.util.*;
+
+public class Change
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in);
+    double amount = scan.nextInt();
+    scan.nextLine();
+    
+    double [] toCheck = {20, 10, 5, 2, 1, 0.25, 0.10, 0.05};
+    
+    String line = "";
+    
+    double remainder = amount;
+    
+    for (int i = 0; i < toCheck.length; i++)
+    {
+      remainder = getChange(remainder, toCheck[i]);
+    }
+  }
+  
+  public static double getChange(double amount, double div)
+  {
+    double mod = amount % div;
+    double fits = (amount - mod) / div;
+    System.out.println(fits + " $" + div + " bills.");
+    return mod;
+  }
+}

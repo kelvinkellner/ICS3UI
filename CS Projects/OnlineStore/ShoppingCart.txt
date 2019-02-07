@@ -1,0 +1,5 @@
+Apples@2.5@2
+Oranges@3.0@9
+Grapes@4.75@7
+Mangos@3.2@0
+*

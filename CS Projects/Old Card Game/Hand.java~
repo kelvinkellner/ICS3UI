@@ -1,0 +1,21 @@
+public class Hand
+{
+  int handsize = 0;
+  boolean withSuits = false;
+  
+  int cardsAvailable[][] = new int[4][13];
+  
+  for (int i = 0; i < 4; i++)
+  {
+    for (int k = 0; k < 13; k++)
+    {
+      // For my own understanding:
+      // The suits will be the hundred's place
+      // Hearts = 000, Spades = 100, Clubs = 200, Diamonds = 300
+      // The card type will be the 1's/10's place
+      // 0-10 = [num] - 2 (e.g. 2 is 0, 10 is 8), J = 10, Q = 11, K = 12, A = 13
+      
+      cardsAvailable[i][k] = (i*100) + k;
+    } // end for card
+  } // end for suit
+} // end class

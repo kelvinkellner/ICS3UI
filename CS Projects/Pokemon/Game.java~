@@ -1,0 +1,9 @@
+public class Game
+{
+  public static void main(String[] args)
+  {
+    Defaults defaults = new Defaults();
+    Player player = new Player();
+    player.newPokemon("Charmander");
+  }
+}
